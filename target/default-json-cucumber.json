@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3332944284,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sorting the data",
+        "description": "",
+        "id": "managing-inventory-reports;sorting-the-data",
+        "after": [
+          {
+            "result": {
+              "duration": 116749589,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2470042293,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Manager goes to BriteErp.com main page",
+            "match": {
+              "location": "ShirinsSteps.manager_goes_to_BriteErp_com_main_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9848202887,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Manager chooses valid url and click",
+            "match": {
+              "location": "ShirinsSteps.manager_chooses_valid_url_and_click()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10505194376,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Manager enters valid credentials and logs in",
+            "match": {
+              "location": "ShirinsSteps.manager_enters_valid_credentials_and_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5566036130,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Successful Message should appear",
+            "match": {
+              "location": "ShirinsSteps.successful_Message_should_appear()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 82533690,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Manager should choose Inventory section",
+            "match": {
+              "location": "ShirinsSteps.manager_should_choose_Inventory_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88933258,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Manager should choose under Reporting Inventory button and click",
+            "match": {
+              "location": "ShirinsSteps.manager_should_choose_under_Reporting_Inventory_button_and_click()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3432766264,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Choose Current Inventory report",
+            "match": {
+              "location": "ShirinsSteps.choose_Current_Inventory_report()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73788322,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on Retrieve the Inventory Quantities",
+            "match": {
+              "location": "ShirinsSteps.click_on_Retrieve_the_Inventory_Quantities()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4524984674,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Press on Reserved button",
+            "match": {
+              "location": "ShirinsSteps.press_on_Reserved_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Managing inventory reports",
+    "description": "",
+    "id": "managing-inventory-reports",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/shirin.feature",
+    "tags": []
+  }
+]
