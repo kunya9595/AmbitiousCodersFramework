@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         "json:target/default-json-cucumber.json"},
         features = "src/test/resources/features",
         glue = "com.ambitious.steps",
-        tags = "@smoke",
-        dryRun = false
+        tags = "@select",
+        dryRun =false
 
 
 

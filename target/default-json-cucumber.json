@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3332944284,
+              "duration": 3805387701,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Sorting the data",
+        "line": 4,
+        "name": "select products from Master Data",
         "description": "",
-        "id": "managing-inventory-reports;sorting-the-data",
+        "id": "select-functionality;select-products-from-master-data",
         "after": [
           {
             "result": {
-              "duration": 116749589,
+              "duration": 106783833,
               "status": "passed"
             },
             "match": {
@@ -34,46 +34,46 @@
         "steps": [
           {
             "result": {
-              "duration": 2470042293,
+              "duration": 2676636770,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Manager goes to BriteErp.com main page",
+            "line": 6,
+            "name": "user goes to BriteErp.com main page",
             "match": {
-              "location": "ShirinsSteps.manager_goes_to_BriteErp_com_main_page()"
+              "location": "MervesSteps.user_goes_to_BriteErp_com_main_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9848202887,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Manager chooses valid url and click",
-            "match": {
-              "location": "ShirinsSteps.manager_chooses_valid_url_and_click()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10505194376,
+              "duration": 2015000827,
               "status": "passed"
             },
             "line": 7,
-            "name": "Manager enters valid credentials and logs in",
+            "name": "user chooses valid url and click",
             "match": {
-              "location": "ShirinsSteps.manager_enters_valid_credentials_and_logs_in()"
+              "location": "MervesSteps.user_chooses_valid_url_and_click()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5566036130,
+              "duration": 5257461815,
               "status": "passed"
             },
             "line": 8,
+            "name": "user enters valid credentials and logs in",
+            "match": {
+              "location": "MervesSteps.user_enters_valid_credentials_and_logs_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2674055150,
+              "status": "passed"
+            },
+            "line": 9,
             "name": "Successful Message should appear",
             "match": {
               "location": "ShirinsSteps.successful_Message_should_appear()"
@@ -82,77 +82,65 @@
           },
           {
             "result": {
-              "duration": 82533690,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Manager should choose Inventory section",
-            "match": {
-              "location": "ShirinsSteps.manager_should_choose_Inventory_section()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88933258,
+              "duration": 89124387,
               "status": "passed"
             },
             "line": 10,
-            "name": "Manager should choose under Reporting Inventory button and click",
+            "name": "user should choose Inventory section",
             "match": {
-              "location": "ShirinsSteps.manager_should_choose_under_Reporting_Inventory_button_and_click()"
+              "location": "MervesSteps.user_should_choose_Inventory_section()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 3432766264,
+              "duration": 73729435,
               "status": "passed"
             },
             "line": 11,
-            "name": "Choose Current Inventory report",
+            "name": "user clicks the product tab.",
             "match": {
-              "location": "ShirinsSteps.choose_Current_Inventory_report()"
+              "location": "MervesSteps.user_clicks_the_product_tab()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 73788322,
+              "duration": 5292367398,
               "status": "passed"
             },
             "line": 12,
-            "name": "Click on Retrieve the Inventory Quantities",
+            "name": "user select any random products from the product list.",
             "match": {
-              "location": "ShirinsSteps.click_on_Retrieve_the_Inventory_Quantities()"
+              "location": "MervesSteps.user_select_any_random_products_from_the_product_list()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4524984674,
+              "duration": 2792713426,
               "status": "passed"
             },
             "line": 13,
-            "name": "Press on Reserved button",
+            "name": "user can see the details of the selected product on the nex page.",
             "match": {
-              "location": "ShirinsSteps.press_on_Reserved_button()"
+              "location": "MervesSteps.user_can_see_the_details_of_the_selected_product_on_the_nex_page()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@select"
           }
         ]
       }
     ],
-    "name": "Managing inventory reports",
+    "name": "select functionality",
     "description": "",
-    "id": "managing-inventory-reports",
+    "id": "select-functionality",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/shirin.feature",
+    "uri": "src/test/resources/features/merve.feature",
     "tags": []
   }
 ]
