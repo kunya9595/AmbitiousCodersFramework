@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/shirin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/merve.feature");
 formatter.feature({
-  "name": "Managing inventory reports",
+  "name": "select functionality",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Sorting the data",
+  "name": "select products from Master Data",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@select"
     }
   ]
 });
@@ -18,31 +18,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Manager goes to BriteErp.com main page",
+  "name": "user goes to BriteErp.com main page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "ShirinsSteps.manager_goes_to_BriteErp_com_main_page()"
+  "location": "MervesSteps.user_goes_to_BriteErp_com_main_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Manager chooses valid url and click",
+  "name": "user chooses valid url and click",
   "keyword": "And "
 });
 formatter.match({
-  "location": "ShirinsSteps.manager_chooses_valid_url_and_click()"
+  "location": "MervesSteps.user_chooses_valid_url_and_click()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Manager enters valid credentials and logs in",
+  "name": "user enters valid credentials and logs in",
   "keyword": "And "
 });
 formatter.match({
-  "location": "ShirinsSteps.manager_enters_valid_credentials_and_logs_in()"
+  "location": "MervesSteps.user_enters_valid_credentials_and_logs_in()"
 });
 formatter.result({
   "status": "passed"
@@ -58,51 +58,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Manager should choose Inventory section",
+  "name": "user should choose Inventory section",
   "keyword": "And "
 });
 formatter.match({
-  "location": "ShirinsSteps.manager_should_choose_Inventory_section()"
+  "location": "MervesSteps.user_should_choose_Inventory_section()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Manager should choose under Reporting Inventory button and click",
+  "name": "user clicks the product tab.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ShirinsSteps.manager_should_choose_under_Reporting_Inventory_button_and_click()"
+  "location": "MervesSteps.user_clicks_the_product_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Choose Current Inventory report",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ShirinsSteps.choose_Current_Inventory_report()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on Retrieve the Inventory Quantities",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ShirinsSteps.click_on_Retrieve_the_Inventory_Quantities()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Press on Reserved button",
+  "name": "user select any random products from the product list.",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "ShirinsSteps.press_on_Reserved_button()"
+  "location": "MervesSteps.user_select_any_random_products_from_the_product_list()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user can see the details of the selected product on the nex page.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "MervesSteps.user_can_see_the_details_of_the_selected_product_on_the_nex_page()"
 });
 formatter.result({
   "status": "passed"
