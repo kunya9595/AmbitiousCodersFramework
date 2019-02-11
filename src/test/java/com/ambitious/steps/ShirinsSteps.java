@@ -12,6 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import javax.security.auth.login.Configuration;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ShirinsSteps {
@@ -82,11 +84,28 @@ public class ShirinsSteps {
     }
 
     @Then("Press on Reserved button")
-    public void press_on_Reserved_button() {
+    public void press_on_Reserved_button() throws InterruptedException {
 
+
+        Thread.sleep(6000);
+        homePageObject.reservedBtn.click();
+        Thread.sleep(3000);
         homePageObject.reservedBtn.click();
 
 
+        List<WebElement> txt = homePageObject.table.findElements(By.xpath("//table/tbody//td[4]"));
+
+        boolean asc = false;
+        for(int i = 0; i < txt.size()-1;i++){
+
+            double num1 = Double.parseDouble(txt.get(i).getText());
+            double num2 = Double.parseDouble(txt.get(i+1).getText());
+            if( num1 <= num2 ){
+                asc = true;
+            }
+        }
+
+        Assert.assertTrue("Currently descending order",asc);
 
 
     }
